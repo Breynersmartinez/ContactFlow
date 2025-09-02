@@ -9,7 +9,7 @@ public class Contact {
 
     @Id
     @GeneratedValue(strategy =   GenerationType.IDENTITY)
-    @Column
+    @Column(name = "ID")
     private Integer id;
 
     @Column (name = "NOMBRE")
