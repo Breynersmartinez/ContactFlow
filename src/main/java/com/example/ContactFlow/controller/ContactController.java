@@ -25,6 +25,9 @@ public class ContactController {
         return "Mensaje enviado y guardado correctamente";
     }
 
+
+
+
     @GetMapping
     public List<Contact> getMessages() {
         return emailService.getAllMessages(); // Método que devuelve todos los mensajes de la BD

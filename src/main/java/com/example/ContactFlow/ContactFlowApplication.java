@@ -8,6 +8,9 @@ public class ContactFlowApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ContactFlowApplication.class, args);
+
+		System.out.println("ContactFlow");
 	}
+
 
 }

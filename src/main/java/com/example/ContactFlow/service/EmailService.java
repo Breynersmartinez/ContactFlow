@@ -43,9 +43,11 @@ public class EmailService {
         SimpleMailMessage msg = new SimpleMailMessage(this.templateMessage);
         msg.setTo(form.getEmail());
         msg.setText(
-            "Dear " + form.getName()
-                    + "Gracias por tu mensaje, te responderemos lo mas pronto posible a tu mensaje "
-                    + form.getMessage());
+                "Hola " + form.getName() + ",\n\n" +
+                        "Muchas gracias por tu mensaje. Te responderemos lo más pronto posible.\n\n" +
+                        "Tu mensaje fue:\n" + form.getMessage() + "\n\n" +
+                        "También puedes comunicarte con nosotros a través de nuestro WhatsApp empresarial: https://wa.me/573103212753"
+        );
         try {
             this.mailSender.send(msg);
         }
