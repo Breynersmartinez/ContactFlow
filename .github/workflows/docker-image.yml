@@ -13,4 +13,4 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Build Docker image from subdirectory
-      run: docker build  --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build ContactFlow --file Dockerfile --tag my-image-name:$(date +%s)
