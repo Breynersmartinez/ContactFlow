@@ -1,4 +1,4 @@
-name: contactflow
+name: ContactFlow
 on:
   push:
     branches: [ "main" ]
@@ -13,4 +13,4 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Build Docker image from subdirectory
-      run: docker build contactflow --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build  --file Dockerfile --tag my-image-name:$(date +%s)
