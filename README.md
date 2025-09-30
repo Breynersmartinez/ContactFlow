@@ -26,29 +26,29 @@ El sistema implementa una arquitectura en capas limpia siguiendo las convencione
 
 # Arquitectura de la aplicación principal
 El siguiente diagrama muestra los principales componentes de la aplicación y sus relaciones utilizando nombres de entidades de código reales:
-![img.png](img.png)
+![img.png](imgs/img.png)
 
 # Componentes principales de la aplicación
 
 El sistema está organizado en capas distintas con una clara separación de preocupaciones:
-![img_1.png](img_1.png)
+![img_1.png](imgs/img_1.png)
 
 # Pila de tecnología
 ContactFlow se basa en Spring Boot 3.5.5 con las siguientes dependencias e integraciones clave:
 
-![img_2.png](img_2.png)
+![img_2.png](imgs/img_2.png)
 
 # Opciones tecnológicas clave
-![img_3.png](img_3.png)
+![img_3.png](imgs/img_3.png)
 
 # Flujo de datos de procesamiento de contactos
 Este diagrama ilustra el flujo completo del envío de un formulario de contacto utilizando nombres de métodos y clases reales:
-![img_4.png](img_4.png)
+![img_4.png](imgs/img_4.png)
 
 # Pasos de procesamiento
 
 + Solicitar recepción: ContactController recibe solicitudes POST en /api/contact punto final
-![img_5.png](img_5.png)
+![img_5.png](imgs/img_5.png)
 + Lógica empresarial: EmailService.sendAndSave() El método maneja responsabilidades duales
 + Persistencia de los datos: ContactRepository.save() persiste el contacto con CONTACTOS tabla
 + Entrega por correo electrónico: JavaMailSender configurado por MailConfig envía notificación a través de Gmail SMTP
